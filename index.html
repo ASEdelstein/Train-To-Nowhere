@@ -2,20 +2,98 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Train To Nowhere</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <style type="text/css"> </style>
+
+    <!--Google Fonts-->    
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+    <!-- Moment Js -->
+    <script src = "http://momentjs.com/downloads/moment.js"></script>
+
+</head>
   <body>
-      
+
+        <div class = "container">
+
+
+                <!-- Jumbotron -->
+                <div class= "header col-6">
+                    <p>11</p>
+
+                  
+                </div>
+        
+                <!-- Table -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Current Train Schedule</h3>
+                    </div>
+                    <table class="table" id="train-schedule">
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency(min)</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </table>
+                </div>
+
+    <!-- Add a Train -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Add A Train</h3>
+			</div>
+			<div class="panel-body">
+			<form role="form">
+				<div class="form-group">
+					<label for="train-input">Train Name</label>
+					<input type="text" class="form-control" id="train-input">
+				</div>
+				<div class="form-group">
+					<label for="destination-input">Destination</label>
+					<input type="text" class="form-control" id="destination-input">
+				</div>
+				<div class="form-group">
+					<label for="time-input">First Train Time (HH:mm - military time)</label>
+					<input type="text" class="form-control" id="time-input">
+				</div>
+				<div class="form-group">
+					<label for="frequency-input">Frequency (min)</label>
+					<input type="text" class="form-control" id="frequency-input">
+				</div>
+				<button class="btn btn-default" id="add-train" type="submit">Submit</button>
+				
+
+			</form>
+			</div>
+			
+			
+		</div>
+
+
+
+    </div> <!-- end of main container -->  
+  
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="assets/javascript/train.js"></script>
+    
+</body>
 </html>

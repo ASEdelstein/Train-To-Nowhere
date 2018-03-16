@@ -1,0 +1,26 @@
+body {
+    background-image: url("../images/Brickwall.jpg");
+    background-size:100%;
+    color: white;
+}
+
+.header {
+    background-image: url("../images/Platform.jpg");
+    opacity : 1; 
+    background-repeat: no-repeat;
+    background-size:100%;
+    height: 100%;
+}
+/*
+   .jumbotron {
+    margin-top: 10px;
+    background-color: rgb(131, 4, 4);
+    color: gold;
+    font-family:'UnifrakturMaguntia', cursive;;
+    font-size: 25px;
+}
+*/
+
+.jumbotron h1 {
+    font-size: 50px;
+}
